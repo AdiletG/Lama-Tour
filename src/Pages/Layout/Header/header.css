@@ -1,0 +1,14 @@
+.header{
+    padding: 15px 0 10px ;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+.header.active{
+    background: #010101;
+    box-shadow: 2px 5px 10px -3px rgba(80, 80, 80, 0.25);
+    /*box-shadow:  0 0 5px 3px rgba(169, 169, 169, 0.82);*/
+    transition: .3s;
+}

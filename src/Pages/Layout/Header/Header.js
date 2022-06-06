@@ -1,15 +1,26 @@
-import React from 'react';
+import React , {useState}from 'react';
 import './header.css'
 import {NavLink} from "react-router-dom";
 import lama from '../../../Assets/logo/lama.png'
 
 const Header = () => {
 
+    const [navbar, setNavbar] = useState(false);
+
+    const navbarChange = () => {
+      if (window.scrollY >= 10){
+          setNavbar(true)
+      } else{
+          setNavbar(false)
+      }
+    };
+
+    window.addEventListener('scroll', navbarChange);
 
 
 
     return (
-            <header className="true">
+            <header className={navbar ? 'header active' : 'header'}>
                 <nav className='nav'>
 
                     <NavLink to='/' className="logo-block">

@@ -1,4 +1,5 @@
 import React from 'react';
+import './map.css'
 import GoogleMapReact from 'google-map-react';
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
@@ -13,15 +14,11 @@ const Map = () => {
     };
 
     return (
-        <section className="map">
-            <div className="container">
-                <div className="map__content">
+        <div className="map">
                     <iframe
-                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A9eb0c42d599ef7b4692a61b6ac1fbfe36985a9aed46d1f90872a0c92b8158157&amp;source=constructor"
-                        width="100%" height="476" frameBorder="0"></iframe>
-                </div>
-            </div>
-        </section>
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3Adbd4b336a9931e94880bf23c6ac3ca58ac954e479f62bd40523184c8d84a6860&amp;source=constructor"
+                        width="500" height="500" frameBorder="0"></iframe>
+        </div>
     );
 };
 
